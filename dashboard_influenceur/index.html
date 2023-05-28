@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <!--pour l'encodage-->
+    <meta charset="UTF-8"/>
+    <!--pour le lien CSS qui est relative a cette page html dashboard.html-->
+    <link rel="stylesheet" href="dashboardd.css"/>
+    <!--titre de la page web-->
+    <title>TABLEAU DE BORD</title>
+</head>
+<body>
+
+    <header style="position: fixed; top: 0; width: 100%;">
+        <nav>
+            <ul>
+                <div id="divheader1">
+                    <li class="listee"><a href="../dashboard_influenceur/" class="headrr">M&I</a></li>
+                </div>
+                <div id="divheader2">
+                    <li class="liste"><a href="../dashboard_influenceur/" class="headr">RETOUR</a></li>
+                    <li class="liste"><a href="../index.html" class="headr" onclick="location.href='../logout.php'">LOG OUT</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        /* CSS to style the fixed button */
+        #fixedbutton {
+            position: fixed;
+            top: 150px;
+            left: 50px;
+            width: 100px;
+        }
+    </style>
+    <a href="../support" ><img src="support.png" id="fixedbutton" onclick="desession()"></a>
+
+    <br><br><br><br><br>
+    <!--la premiere composante de la page web apres l'en-tete-->
+    <section class="composant1">
+        <br><br><br><br><br><br><br>
+        <center><h1>TABLEAU DE BORD:INFLUENCEUR</h1></center>
+        <br><br><br><br>
+        <!--definir les deux boutons PROFIL & MESSAGE-->
+        <!--bouton pour consulter le profil-->
+        <!--definition de la classe lien pour le style css du lien-->
+        <!--definition de la classe bouton pour le style css du bouton-->
+        <center><button class="bouton"><a class="lien" href="../profil_influenceur">PROFIL</a></button></center>
+        <br>
+        <!--bouton pour consulter le message-->
+        <!--definition de la classe lien pour le style css du lien-->
+        <!--definition de la classe bouton pour le style css du bouton-->
+        <center><button class="bouton"><a class="lien" href="../chat_inf">MESSAGE</a></button></center>
+        <!--retour a la ligne-->
+        <br/>
+        <!--definir les deux boutons PARTENARIAT & RECHERCHER-->
+        <!--bouton pour consulter le partenariat-->
+        <!--definition de la classe lien pour le style css du lien-->
+        <!--definition de la classe bouton pour le style css du bouton-->
+        <center><button class="bouton"><a class="lien" href="../partenariat_influenceur">PARTENARIAT</a></button></center>
+        <br>
+        <!--bouton pour consulter les recherches-->
+        <!--definition de la classe lien pour le style css du lien-->
+        <!--definition de la classe bouton pour le style css du bouton-->
+        <center><button class="bouton"><a class="lien" href="../rechercher_influenceur">RECHERCHER</a></button></center>
+        <!--retour a la ligne-->
+        <br/>
+    </section>
+</body>
+</html>
